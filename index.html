@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<title>My Books</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" href="styles.css">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Exo:wght@300&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap" rel="stylesheet">
+
+<body>
+
+	<div id="main_container">
+
+		<div id="title-bar">
+			<span id="title-text">My Library</span>
+			<hr id="title-underline">
+		</div>
+
+		<div id="book-shelf">
+		</div>
+		<div id=addBookButton>
+			<button type="button" id="btn" onclick="openForm()">+</button>
+		</div>
+
+		<!-- Form starts here -->
+		<div id="form-popup">
+			<div id="main-form-box">
+				<span class="close">&times;</span>
+				<div id="form-content">
+					<div id="form-title-container">
+						<span id="form-title">Add new book</span>
+					</div>
+					<form id="form-container">
+						<div id="form-row1-a">
+							<label for="Title"><b>Title</b></label>
+						</div>
+						<div id="form-row1-b">
+							<input type="text" placeholder="Enter title" name="title" id="newTitle" value="" required/>
+						</div>
+
+						<div id="form-row2-a">
+							<label for="Author"><b>Author</b></label>
+						</div>
+						<div id="form-row2-b">
+							<input type="text" placeholder="Enter author" name="author" id="newAuthor" value="" required/>
+						</div>
+
+						<div id="form-row3-a">
+							<label for="Page length"><b>Page length</b></label>
+						</div>
+						<div id="form-row3-b">
+							<input type="text" placeholder="Enter page count" name="pageLength" id="newPages" value="" required/>
+						</div>
+
+						<div id="form-row4">
+							<button type="button" onclick="submitForm()" class="submit-btn">Submit</button>
+						</div>
+					</form>
+				</div>
+			</div>
+
+		</div>
+		<!-- Form ends here -->
+
+	</div>
+
+</body>
+
+<script src="main.js"></script>
+
+</html>

@@ -1,0 +1,317 @@
+html {
+    height: 100%;
+}
+
+body {
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(180deg, #5C5C5C 0%, #303030 100%);
+	background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#title-text {
+	display: inline-block;
+	font-family: 'Exo', sans-serif;
+	font-size: 42px;
+	color: #FFFFFF;
+	margin-top: 50px;
+	margin-left: 50px;
+	margin-bottom: 50px;
+}
+
+hr {
+	width: 230px;
+	position: absolute;
+	left: 45px;
+	top: 115px;
+}
+
+
+#book-card1 {
+	border-radius: 15px;
+	background: linear-gradient(105.9deg, #5CD1BC 3.59%, rgba(57, 158, 140, 0) 97.21%), #3787A0;
+	padding: 20px; 
+	width: 320px;
+	height: 165px;
+	left: 100px;
+	top: 260px;
+	box-shadow: 6px 4px 4px rgba(0, 0, 0, 0.1);
+}
+
+#book-card2 {
+	border-radius: 15px;
+	background: linear-gradient(105.9deg, #6C00C1 3.59%, rgba(168, 168, 168, 0) 97.21%), #923CB5;
+	padding: 20px; 
+	width: 320px;
+	height: 165px;
+	left: 100px;
+	top: 260px;
+	box-shadow: 6px 4px 4px rgba(0, 0, 0, 0.1);
+}
+
+#book-card3 {
+	border-radius: 15px;
+	background: linear-gradient(105.9deg, #A40606 3.59%, rgba(255, 209, 158, 0) 97.21%), #D98324;
+	padding: 20px; 
+	width: 320px;
+	height: 165px;
+	left: 100px;
+	top: 260px;
+	box-shadow: 3px 2px 2px rgba(0, 0, 0, 0.1);
+}
+
+#book-shelf {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	width:100%;
+}
+
+#book-shelf > div {
+	padding-left: 50px;
+}
+
+#book-title {
+	font-weight: bold;
+	font-size: 28px;
+	color: #FFFFFF;
+	font-family: 'Raleway', sans-serif;
+}
+
+#book-author {
+	font-weight: bold;
+	font-size: 16px;
+	color: #E5E5E5;
+	font-family: 'Raleway', sans-serif;
+}
+
+#book-length {
+	font-weight: bold;
+	font-size: 16px;
+	color: #E5E5E5;
+	font-family: 'Raleway', sans-serif;
+}
+
+#addBookButton {
+	position: relative;
+}
+
+
+#btn {
+	display:inline-block;
+	height: 55px;
+	width: 55px;
+	border-radius: 50%;
+	border: none;
+	color: #FFFFFF;
+	font-size:28px;
+	position: fixed;
+	bottom: 30px;
+	right: 30px;
+	outline:none;
+	background: linear-gradient(180deg, #FF47CC 0%, rgba(171, 112, 247, 0) 100%), #612EB5;
+	-webkit-transition: -webkit-transform .3s ease-in-out;
+    transition: transform .3s ease-in-out;
+}
+
+#btn:hover,
+#btn:focus {
+	cursor: pointer;
+  	-webkit-transform: rotate(180deg);
+     transform: rotate(180deg);
+}
+
+#form-popup {
+	display: none;
+	position: fixed; /* Stay in place */
+	z-index: 1; /* Sit on top */
+	padding-top: 200px; /* Location of the box */
+	left: 0;
+	top: 0;
+	width: 100%; /* Full width */
+	height: 100%; /* Full height */
+	overflow: auto; /* Enable scroll if needed */
+	background-color: rgba(0,0,0,0.6); /* Black w/ opacity */
+}
+
+#main-form-box {
+	margin:auto;
+	max-width: 330px;
+	background: #696969;
+	padding-top:25px;
+	padding-bottom: 25px;
+	border-radius: 10px;
+}
+
+#form-content {
+	width:100%;
+	margin-left:70px;
+	font-family: 'Raleway', sans-serif;
+	color:#FFFFFF;
+}
+
+
+#form-title {
+	font-size: 30px;
+	font-weight: bold;
+}
+
+#form-title-container {
+	padding-bottom: 20px;
+}
+
+form > div > input {
+	margin-bottom: 20px;
+	font-size: 16px;
+	background: #292929;
+	color: #FFFFFF;
+	stroke: none;
+	outline: none;
+	border-radius: 4px;
+	padding: 3px;
+	border: none;
+	border-bottom: 2px;
+}
+
+::placeholder {
+	color: #b8b8b8;
+	font-family: 'Exo', sans-serif;
+	font-size: 16px;
+}
+
+#form-row1-a {
+	font-size: 20px;
+	padding-bottom: 5px;
+}
+
+#form-row2-a {
+	font-size: 20px;
+	padding-bottom: 5px;
+}
+
+#form-row3-a {
+	font-size: 20px;
+	padding-bottom: 5px;
+}
+
+#form-row4 {
+	font-size: 20px;
+	padding-top: 10px;
+}
+
+#form-row4 button {
+	border-radius: 4px;
+	width:100px;
+	background: #f29b27;
+	color:#FFFFFF;
+	border: none;
+	outline: none;
+	font-size: 16px;
+
+}
+
+.close {
+	display: inline-block;
+	position: relative;
+	left: 302px;
+	top:-10px;
+	color: #FFFFFF;
+	font-size: 20px;
+}
+
+.close:hover,
+.close:focus {
+	color: #000;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.removeBook {
+	display: inline-block;
+	position: relative;
+	left: 332px;
+	top:50px;
+	color: #FFFFFF;
+	font-size: 20px;
+}
+
+.removeBook:hover,
+.removeBook:focus {
+	color: #000;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 35px;
+  height: 16px;
+  left: 285px;
+  bottom: 5px;
+}
+
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height:12px;
+  width: 12px;
+  left: 4px;
+  bottom: 2px;
+  background-color: #FFFFFF;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #1aeb78;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(16px);
+  -ms-transform: translateX(16px);
+  transform: translateX(16px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.readText {
+	position: relative;
+  	display: inline-block;
+	font-family: 'Raleway', sans-serif;
+	color: #e8e8e8;
+	font-size: 14px;
+	left: 203px ;
+	bottom: 6px;
+}
+
